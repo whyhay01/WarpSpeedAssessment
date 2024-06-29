@@ -30,6 +30,7 @@ object NetworkModule {
 
     private const val TIMEOUT_VALUE = 120L
     private const val KEEP_ALIVE_DURATION = 5L
+    private const val API_KEY = "ee07f985"
 
     @Provides
     fun providesGson(): Gson = GsonBuilder().create()
@@ -52,7 +53,7 @@ object NetworkModule {
             .addInterceptor { chain ->
                 val original = chain.request()
                 val url =
-                    original.url.newBuilder().addQueryParameter("apikey", BuildConfig.TEST_API_KEY)
+                    original.url.newBuilder().addQueryParameter("apikey", API_KEY)
                         .build()
                 val request = original.newBuilder().url(url).build()
                 chain.proceed(request)

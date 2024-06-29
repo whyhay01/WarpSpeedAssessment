@@ -46,7 +46,6 @@ class MovieFragment : Fragment(), MovieAdapter.ItemClickedListener {
         binding.searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener,
             androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-
                 if (query!!.isBlank()) {
                     Timber.d("Input movie title")
                     Toast.makeText(requireContext(), "Input movie title", Toast.LENGTH_SHORT).show()
