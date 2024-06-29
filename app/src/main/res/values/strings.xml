@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WarpspeedAssessment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_tile">Movie tile</string>
+    <string name="content_description">content description</string>
+    <string name="no_display">No display! \n Search for a movie you like to see</string>
+    <string name="actors">Actors: %1$s</string>
+    <string name="plot">Plot: %1$s</string>
+    <string name="genre">Genre: %1$s</string>
+    <string name="year">Year: %1$s</string>
+    <string name="writers">Writers: %1$s</string>
+    <string name="title">Title: %1$s</string>
+</resources>
